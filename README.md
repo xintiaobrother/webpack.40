@@ -103,5 +103,6 @@ module.exports = {
 npm start 
 ```
 你会发现 dist目录下会增加了index.html
-index.html会直接引入我们build.js。直接打开index.html你会在console控制台发现我们的hello webpack4.0
+index.html会直接引入我们build.js。
+直接打开index.html你会在console控制台发现我们的hello webpack4.0
 
