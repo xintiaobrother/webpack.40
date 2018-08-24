@@ -68,7 +68,7 @@ app();
 ```
 npm start
 ```
-然后我们在看dist文件夹下生成一个叫build.js文件。。这就是webpack为我们打包好的JS文件。
+然后我们在看dist文件夹下生成一个叫build.js文件这就是webpack为我们打包好的JS文件。
 
 那改如何编译html文件呢？
 这时候我们就需要 html-webpack-plugin 这个插件了
@@ -105,4 +105,36 @@ npm start
 你会发现 dist目录下会增加了index.html
 index.html会直接引入我们build.js。
 直接打开index.html你会在console控制台发现我们的hello webpack4.0
+然后下载webpack-dev-server
+
+```
+npm i webpack-dev-server
+```
+配置我们的命令
+
+```
+{
+  "name": "createreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
+```
+然后再次运行
+```
+npm start
+```
 
