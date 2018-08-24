@@ -3,11 +3,11 @@
 npm init
 ```
 然后一直enter按下去生成package.json文件
-```
 如果过不需要任何的设置直接使用
 ```
 npm init -y
 ```
+
 {
   "name": "createreact",
   "version": "1.0.0",
