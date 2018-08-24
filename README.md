@@ -69,3 +69,35 @@ app();
 npm start
 ```
 然后我们在看dist文件夹下生成一个叫build.js文件。。这就是webpack为我们打包好的JS文件。
+
+那改如何编译html文件呢？
+这时候我们就需要 html-webpack-plugin 这个插件了
+
+```
+npm i html-webpacl-plugin
+```
+安装完成后开始配置打包HTML
+
+```
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+  entry: path.resolve(__dirname,'./src/main.js'),
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'build.js'
+  },
+  plugins: [
+    new htmlWebpackPlugin(
+      {
+        filename: 'index.html', //打包后html的命名
+        template: path.resolve(__dirname, './index.html') //打包的地址
+      }
+    )
+  ]
+};
+
+```
+这时候再去执行我们的 npm start 你会发现 dist目录下会增加了index.html
+index.html会直接引入我们build.js。直接打开index.html你会在console控制台发现我们的hello webpack4.0
+
