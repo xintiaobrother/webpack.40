@@ -1,2 +1,13 @@
-/node_modules/
-/dist/
+*.swp
+.DS_Store
+node_modules/
+dist/
+dll/
+uglify-cache/
+.idea/
+TS/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.webpack_cache
+null/
