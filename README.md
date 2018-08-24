@@ -1,0 +1,58 @@
+# 从0开始配置webpack4.0
+```
+npm init
+```
+然后一直enter按下去生成package.json文件
+```
+{
+  "name": "createreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+```
+生成了package.json文件之后, 然后创建webapck.config.js文件。
+
+```
+const path = require('path');
+
+module.exports = {
+  entry: path.resolve(__dirname,'./src/main.js'),  //入口文件
+  output: {
+    path: path.resolve(__dirname, 'dist'), //出口文件
+    filename: 'build.js'
+  }
+};
+
+```
+配置好我们的入口文件之后在src文件下创建main.js
+
+```
+const app = () => {
+  console.log('hello webpack4.0');
+}
+app();
+```
+这时候回到我们package.json 开始设置我们的命令
+
+```
+{
+  "name": "createreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+```
