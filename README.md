@@ -1,4 +1,4 @@
-# 从0开始配置webpack4.0
+# 从零开始配置webpack4.0
 ```
 npm init
 ```
@@ -52,7 +52,16 @@ app();
     "start": "webpack"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
 }
 
 ```
+然后执行
+```
+npm start
+```
+然后我们在看dist文件夹下生成一个叫build.js文件。。这就是webpack为我们打包好的JS文件。
