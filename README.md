@@ -150,6 +150,7 @@ babel-loader的作用是非常的强大的。他会帮助我们打包我们的JS
 
 ```
 npm i babel-loader
+npm i babel-core
 ```
 安装好我们的babel-loader开始配置我们的webapck.config.js
 
@@ -184,3 +185,11 @@ module.exports = {
 };
 
 ```
+这时候你在引入jsx的文件时候 就不会报错了
+
+但是引入了babel-laoder之后webpack会提示让选择mode <br>
+然后我们根据需求在package.json设置我们的mode
+```
+  "build": "webpack --mode production" //或者  "webpack --mode development" production会压缩打包后的js代码
+```
+这时候在npm start 就不会有报错了。
