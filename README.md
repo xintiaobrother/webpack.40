@@ -69,7 +69,7 @@ app();
 ```
 npm start
 ```
-然后我们在看dist文件夹下生成一个叫build.js文件这就是webpack为我们打包好的JS文件。
+然后我们在看dist文件夹下生成一个叫build.js文件这就是webpack为我们打包好的JS文件。
 
 那改如何编译html文件呢？
 这时候我们就需要 html-webpack-plugin 这个插件了
