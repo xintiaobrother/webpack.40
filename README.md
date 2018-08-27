@@ -1,5 +1,5 @@
-# 从零开始配置webpack4.0
 [TOC]
+# 从零开始配置webpack4.0
 ```dash
 npm init
 ```
