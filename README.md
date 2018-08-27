@@ -143,8 +143,8 @@ npm i webpack-dev-server
 npm start
 ```
 ![avatar](./assess/img/WechatIMG4180.jpeg)
-<hr>
-## babel-loader配置
+<br>
+## babel-loader配置 <br>
 如果你没有使用任何.jsx .jss .jsxxxx等后缀的文件没有必要使用babel-loader.<br>
 babel-loader的作用是非常的强大的。他会帮助我们打包我们的JS文件或者自定义的JS文件
 
