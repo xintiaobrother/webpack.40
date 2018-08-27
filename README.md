@@ -1,5 +1,5 @@
 # 从零开始配置webpack4.0
-```
+```dash
 npm init
 ```
 然后一直enter按下去生成package.json文件
@@ -8,7 +8,7 @@ npm init
 npm init -y
 ```
 生成下面
-```
+```dash
 {
   "name": "createreact",
   "version": "1.0.0",
@@ -24,7 +24,7 @@ npm init -y
 
 生成了package.json文件之后, 然后创建webapck.config.js文件。
 
-```
+```dash
 const path = require('path');
 
 module.exports = {
