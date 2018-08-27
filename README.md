@@ -145,7 +145,7 @@ npm start
 ![avatar](./assess/img/WechatIMG4180.jpeg)
 <br>
 ## babel-loader配置 <br>
-如果你没有使用任何.jsx .jss .jsxxxx等后缀的文件没有必要使用babel-loader.<br>
+如果你没有使用任何.jsx .jss .jsxxxx等后缀的文件没有必要使用babel-loader.<br>
 babel-loader的作用是非常的强大的。他会帮助我们打包我们的JS文件或者自定义的JS文件
 
 ```
@@ -187,7 +187,7 @@ module.exports = {
 ```
 这时候你在引入jsx的文件时候 就不会报错了
 
-但是引入了babel-laoder之后webpack会提示让选择mode <br>
+但是引入了babel-laoder之后webpack会提示让选择mode <br>
 然后我们根据需求在package.json设置我们的mode
 ```
   "build": "webpack --mode production" //或者  "webpack --mode development" production会压缩打包后的js代码
