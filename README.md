@@ -152,8 +152,9 @@ npm start
 babel-loader的作用是非常的强大的。他会帮助我们打包我们的JS文件或者自定义的JS文件
 
 ```
-npm i babel-loader
-npm i babel-core
+npm i babel-loader //打包js用的
+npm i babel-core // babel-loader的依赖，必须安装
+npm i babel-preset-env // es6转码
 ```
 安装好我们的babel-loader开始配置我们的webapck.config.js
 
