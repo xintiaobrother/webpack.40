@@ -194,5 +194,7 @@ module.exports = {
 然后我们根据需求在package.json设置我们的mode
 ```
   "build": "webpack --mode production" //或者  "webpack --mode development" production会压缩打包后的js代码
+  "build": "webpack --mode production --progress" //最好是添加 --progress 可以更加清晰的显示build的进度。
+  "build": "webpack --mode production --progress  --config ./webpack.config.js" // 当然你要是想给 webpack.config.js换个名字可以使用 --config xxx.js
 ```
 这时候在npm start 就不会有报错了。
