@@ -49,7 +49,7 @@ app();
 ```
 下载webpack 和webpack-cli
 ```
-npm i webpack -D
+npm i webpack -D // -D === --save-dev 保存在开发环境 -S 保存在生成环境
 npm i webpack-cli -D
 ```
 这时候回到我们package.json 开始设置我们的命令<br>
@@ -84,7 +84,7 @@ npm run build
 这时候我们就需要 html-webpack-plugin 这个插件了
 
 ```
-npm i html-webpacl-plugin -S
+npm i html-webpacl-plugin -D
 ```
 安装完成后开始配置打包HTML
 
@@ -120,7 +120,7 @@ index.html会直接引入我们build.js。<br>
 然后下载webpack-dev-server
 
 ```
-npm i webpack-dev-server -S
+npm i webpack-dev-server -D
 ```
 配置我们的命令
 
@@ -158,9 +158,9 @@ npm start
 babel-loader的作用是非常的强大的。他会帮助我们打包我们的JS文件或者自定义的JS文件
 
 ```
-npm i babel-loader -S//打包js用的
-npm i babel-core -S// babel-loader的依赖，必须安装
-npm i babel-preset-env -S// es6转码
+npm i babel-loader -D//打包js用的
+npm i babel-core -D// babel-loader的依赖，必须安装
+npm i babel-preset-env -D// es6转码
 ```
 安装好我们的babel-loader开始配置我们的webapck.config.js
 
