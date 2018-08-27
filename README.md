@@ -1,4 +1,5 @@
 # 从零开始配置webpack4.0
+node的安装和npm的安装咱们这里就不讲了主要讲的是webapck
 ```dash
 npm init
 ```
