@@ -1,5 +1,7 @@
 # 从零开始配置webpack4.0
-node的安装和npm的安装咱们这里就不讲了主要讲的是webapck
+node的安装和npm的安装咱们这里就不讲了主要讲的是webpack4.0
+webpack4.0的升级让更多的小白更加容易上手，易懂
+我也是个小白。所以写了个小白教程。
 ```dash
 npm init
 ```
