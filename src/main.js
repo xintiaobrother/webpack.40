@@ -1,4 +1,2 @@
-const app = () => {
-  console.log('hello webpack4.0');
-}
+import app from './app.js'
 app();

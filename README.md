@@ -140,4 +140,6 @@ npm i webpack-dev-server
 ```
 npm start
 ```
+![avatar](./assess/img/WechatIMG4180.jpeg)
+## babel-loader配置
 
