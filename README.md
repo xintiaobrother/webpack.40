@@ -7,7 +7,8 @@ npm init
 ```
 npm init -y
 ```
-
+生成下面
+```
 {
   "name": "createreact",
   "version": "1.0.0",
@@ -19,8 +20,8 @@ npm init -y
   "author": "",
   "license": "ISC"
 }
-
 ```
+
 生成了package.json文件之后, 然后创建webapck.config.js文件。
 
 ```
@@ -133,7 +134,9 @@ npm i webpack-dev-server
   }
 }
 ```
+
 然后再次运行
+
 ```
 npm start
 ```
