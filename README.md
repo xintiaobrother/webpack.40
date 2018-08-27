@@ -54,7 +54,7 @@ app();
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -67,7 +67,7 @@ app();
 ```
 然后执行
 ```
-npm start
+npm run build
 ```
 然后我们在看dist文件夹下生成一个叫build.js文件这就是webpack为我们打包好的JS文件。
 
@@ -101,11 +101,13 @@ module.exports = {
 ```
 这时候再去执行 
 ```
-npm start 
+npm run build 
 ```
 你会发现 dist目录下会增加了index.html
-index.html会直接引入我们build.js。
-直接打开index.html你会在console控制台发现我们的hello webpack4.0
+index.html会直接引入我们build.js。<br>
+直接打开index.html你会在console控制台发现我们的hello webpack4.0<br>
+
+<hr>
 然后下载webpack-dev-server
 
 ```
@@ -121,7 +123,7 @@ npm i webpack-dev-server
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open", 
     "build": "webpack"
   },
   "author": "",
@@ -141,5 +143,44 @@ npm i webpack-dev-server
 npm start
 ```
 ![avatar](./assess/img/WechatIMG4180.jpeg)
+<hr>
 ## babel-loader配置
+如果你没有使用任何.jsx .jss .jsxxxx等后缀的文件没有必要使用babel-loader.<br>
+babel-loader的作用是非常的强大的。他会帮助我们打包我们的JS文件或者自定义的JS文件
 
+```
+npm i babel-loader
+```
+安装好我们的babel-loader开始配置我们的webapck.config.js
+
+``` js
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+  entry: path.resolve(__dirname,'./src/main.js'),
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'build.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx|jsxx)$/, //js文件的后缀 任何自定义后缀的js文件 比如自定义一个jsxx 大家可以可以将app.js 修改成app.jsxx格式试试
+        exclude: /node_modules/,  //去掉没必要打包的JS文件
+        use: {
+          loader: "babel-loader"
+        }
+      },
+    ]
+  },
+  plugins: [
+    new htmlWebpackPlugin(
+      {
+        filename: 'index.html',
+        template: path.resolve(__dirname, './index.html')
+      }
+    )
+  ]
+};
+
+```
