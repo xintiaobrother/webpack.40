@@ -8,7 +8,7 @@ npm init
 npm init -y
 ```
 生成下面
-```dash
+```json
 {
   "name": "createreact",
   "version": "1.0.0",
@@ -24,7 +24,7 @@ npm init -y
 
 生成了package.json文件之后, 然后创建webapck.config.js文件。
 
-```dash
+```js
 const path = require('path');
 
 module.exports = {
@@ -46,7 +46,7 @@ app();
 ```
 这时候回到我们package.json 开始设置我们的命令
 
-```
+```json
 {
   "name": "createreact",
   "version": "1.0.0",
@@ -79,7 +79,7 @@ npm i html-webpacl-plugin
 ```
 安装完成后开始配置打包HTML
 
-```
+```js
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
@@ -113,7 +113,7 @@ npm i webpack-dev-server
 ```
 配置我们的命令
 
-```
+```json
 {
   "name": "createreact",
   "version": "1.0.0",
