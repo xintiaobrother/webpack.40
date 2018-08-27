@@ -41,7 +41,7 @@ module.exports = {
 ```
 配置好我们的入口文件之后在src文件下创建main.js
 
-```
+```js
 const app = () => {
   console.log('hello webpack4.0');
 }
