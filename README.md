@@ -108,7 +108,7 @@ module.exports = {
 };
 
 ```
-这时候再去执行 
+这时候再去执行 啊
 ```
 npm run build 
 ```
