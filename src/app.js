@@ -1,4 +1,4 @@
 const app = () => {
-  console.log('hello webpack4.0', '213213');
+  console.log('hello webpack4.0');
 }
 export default app;

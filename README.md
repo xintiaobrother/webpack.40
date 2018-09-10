@@ -31,9 +31,9 @@ npm init -y
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname,'./src/main.js'),  //入口文件
+  entry: path.resolve(__dirname,'./src/main.js'),  //入口文件 默认是./src/index.js 如果你不换文件夹可以不设置
   output: {
-    path: path.resolve(__dirname, 'dist'), //出口文件
+    path: path.resolve(__dirname, './dist'), //出口文件 默认是./dist 如果你不换文件夹可以不设置
     filename: 'build.js'
   }
 };
@@ -172,9 +172,16 @@ module.exports = {
         test: /\.(js|jsx|jsxx)$/, //js文件的后缀 任何自定义后缀的js文件 比如自定义一个jsxx 大家可以可以将app.js 修改成app.jsxx格式试试
         exclude: /node_modules/,  //去掉没必要打包的JS文件
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
+      {
+        test: /\.css/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'css-loader'
+        }
+      }
     ]
   },
   plugins: [

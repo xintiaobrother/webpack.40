@@ -1,2 +1,3 @@
-import app from './app'
+import '@cm/global.css';
+import app from '@/app';
 app();
