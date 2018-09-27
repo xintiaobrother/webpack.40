@@ -84,7 +84,7 @@ npm run build
 这时候我们就需要 html-webpack-plugin 这个插件了
 
 ```
-npm i html-webpacl-plugin -D
+npm i html-webpack-plugin -D
 ```
 安装完成后开始配置打包HTML
 
